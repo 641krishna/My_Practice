@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock_1_RM24</title>
+    <style>
+        #main1 {
+            /* border: 1px solid black; */
+            width: 100%;
+            background-color: #5DADE2;
+        }
+
+        #nav {
+            /* border: 1px solid red; */
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        #nav1 {
+            width: 60%;
+            color: whitesmoke;
+
+        }
+
+        #nav2 {
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: whitesmoke;
+
+        }
+
+        #nav2>button {
+            border: none;
+            height: 50%;
+            width: 18%;
+            border-radius: 20px
+        }
+
+        #head {
+            text-align: center;
+            color: whitesmoke;
+            font-variant: inherit;
+        }
+
+        #orange {
+            /* border: 1px solid black; */
+            width: 50%;
+            margin: auto;
+
+        }
+
+        #orange>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        #main2 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #main2>div {
+
+            /* border: 1px solid black; */
+            height: 400px;
+            text-align: start;
+            /* padding: 7%; */
+            display: flex;
+            align-items: center;
+        }
+
+        .lorem {
+            /* border: 1px solid red; */
+            width: 70%;
+            height: 50%;
+            margin: auto;
+        }
+
+        .egg>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cherry {
+            width: 60%;
+            height: 50%;
+            margin: auto;
+            margin-top: 0%;
+        }
+
+        .cherry>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .photo {
+         
+            width: 70%;
+            height: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main1">
+        <div id="nav">
+            <div id="nav1">
+                <h2>sunnyside</h2>
+            </div>
+            <div id="nav2">
+                <h3>About</h3>
+                <h3>Services</h3>
+                <h3>Projects</h3>
+                <button>Contact</button>
+            </div>
+        </div>
+        <div id="head">
+            <h1>WE ARE CREATIVES</h1>
+        </div>
+        <div id="orange">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQY2TQE561b8UGODoZRAu678NAoqdJUauGEw&usqp=CAU"
+                alt="">
+        </div>
+
+    </div>
+    <div id="main2">
+        <div>
+            <div class="lorem">
+                <h1>Trasform Your brand</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aliquid laudantium consectetur
+                    nesciunt nihil odit, quisquam eos ipsa, quam suscipit quidem vitae eligendi eaque? Eaque ipsam
+                    delectus velit eum recusandae!</p>
+                <button>Learn More</button>
+            </div>
+
+        </div>
+        <div class="egg">
+            <img src="https://media.istockphoto.com/id/1398514822/photo/two-white-eggs-on-yellow-background-concept-emotions-laughter-and-happiness-friendship.jpg?b=1&s=170667a&w=0&k=20&c=0VrWwfzdGkCvk5sMyGdXmQqtinW6p4KD_FoiTbUQGYc="
+                alt="">
+        </div>
+        <div class="egg">
+            <img src="https://media.istockphoto.com/id/1192906145/photo/water-glass-with-strong-shadows-on-pink-background.jpg?s=612x612&w=0&k=20&c=5sh98yXdTtddfq8A3FNK-rIqhHPMaRFFtQFa19e00BY="
+                alt="">
+        </div>
+        <div>
+            <div class="lorem">
+                <h1>Trasform Your brand</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aliquid laudantium consectetur
+                    nesciunt nihil odit, quisquam eos ipsa, quam suscipit quidem vitae eligendi eaque? Eaque ipsam
+                    delectus velit eum recusandae!</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div
+            style="background-image: url(data:image/jpeg;base64,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);">
+
+            <div class="photo">
+                <h1>Graphic Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum, fuga ipsum ipsa nulla hic
+                    quia ratione, maxime error sapiente perspiciatis voluptate ad explicabo dolore excepturi voluptates
+                    commodi eaque adipisci.</p>
+            </div>
+        </div>
+        <div
+            style="background-image: url(https://thumbs.dreamstime.com/b/fresh-orange-fruit-pink-background-viewed-above-flatlay-style-close-up-fresh-orange-fruit-pink-background-117004226.jpg);">
+            <div class="photo">
+                <h1>Photography</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, deserunt, vel sapiente voluptatibus
+                    perferendis culpa laborum natus, reiciendis facilis dolores alias quasi animi deleniti quaerat.
+                    Reprehenderit facilis iusto voluptate architecto.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
