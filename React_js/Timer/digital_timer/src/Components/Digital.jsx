@@ -10,7 +10,7 @@ const Digital = () => {
         setTime(timer);
     }
 
-    setInterval(updateTime,1000)
+    setInterval(updateTime, 1000)
 
 
     return (
