@@ -7,14 +7,16 @@ const Digital = () => {
 
     const updateTime = () => {
         const timer = new Date().toLocaleTimeString();
-        setTime(timer)
+        setTime(timer);
     }
+
+    setInterval(updateTime,1000)
 
 
     return (
         <div>
             <h1>{ctime}</h1>
-            <button onClick={updateTime}>Get Updated Time</button>
+            {/* <button onClick={updateTime}>Get Updated Time</button> */}
         </div>
     )
 }
