@@ -3,6 +3,7 @@ import './App.css';
 import Digital from './Components/Digital';
 import Usememo from './Components/Usememo';
 import Stopwatch from './Components/Stopwatch';
+import FetchAPI from './Components/FetchAPI';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Usememo />
      --------------------------------------------
       <Stopwatch/>
+      --------------------------------------------
+      <FetchAPI/>
     </div>
   );
 }

@@ -17,11 +17,11 @@ const Stopwatch = () => {
         clearInterval(Ref.current)
     };
 
-    const timePassed = (time-now)/1000;
+    const timePassed = (time - now) / 1000;
     return (
         <div>
             <h4>StopWatch</h4>
-            <h3>{timePassed }</h3>
+            <h3>{timePassed}</h3>
             <button onClick={handleStart}>Start</button>
             <button onClick={handleStop}>Stop</button>
         </div>
