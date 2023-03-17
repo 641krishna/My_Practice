@@ -1,17 +1,32 @@
 import React, { useContext } from 'react'
+import { NavLink } from 'react-router-dom'
 import { AppContext } from '../Context/context'
+import "../Components/movies.css"
 
 const Movies = () => {
 
     const { movie } = useContext(AppContext)
+    console.log(movie)
 
     return (
         <>
-            {movie.map((elem) => {
-                return <div>
-                    <h2>{elem.title}</h2>
+            <section className='movie-page'>
+                <div className="grid4">
+                    {movie.map((elem) => {
+                        const { imdbID, Title, Poster } = elem;
+                        return <NavLink to={`movie/${imdbID}`} key={imdbID}>
+                            <div className="card">
+                                <div className="card-info">
+                                    <h2>{Title}</h2>
+                                    <img src={Poster} alt={`$imdbID`} />
+                                </div>
+                            </div>
+                        </NavLink>
+                    })}
                 </div>
-            })}
+
+            </section>
+
         </>
     )
 }

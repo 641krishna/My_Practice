@@ -1,0 +1,24 @@
+.grid4 {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+.card-info{
+    border: 1px solid #cfd8dc;
+    
+}
+.card-info>h2{
+   color: black;
+   text-decoration: none;
+}
+.card-info>img{
+    width: 250px;
+    height: 150px;
+}
+.card :hover{
+    background-color: #eceff1;
+}
