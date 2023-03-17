@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../Context/context'
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
+
+    const name = useContext(AppContext);
+
+    return (
+        <div>
+            Home
+            <p>{name}</p>
+        </div>
+
+    )
 }
 
 export default Home
