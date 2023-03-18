@@ -5,8 +5,19 @@ import "../Components/movies.css"
 
 const Movies = () => {
 
-    const { movie } = useContext(AppContext)
+    const { movie, isLoading } = useContext(AppContext)
     // console.log(movie)
+
+    if (isLoading) {
+        return (
+            <div>
+                <div className="loading">
+                    Loading...
+                </div>
+            </div>
+
+        )
+    }
 
     return (
         <>

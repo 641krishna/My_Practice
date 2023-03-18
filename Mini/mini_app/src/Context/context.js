@@ -21,7 +21,7 @@ const AppProvider = ({ children }) => {
             } else {
                 setIsError({
                     show: true,
-                    msg: data.error
+                    msg: data.Error
                 })
             }
         } catch (error) {
@@ -30,7 +30,7 @@ const AppProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        let timerOut = setTimeout(() => { getMovies(`${API_URL}&s=${query}`) }, 1000)
+        let timerOut = setTimeout(() => { getMovies(`${API_URL}&s=${query}`) }, 800)
         return () => clearTimeout(timerOut)
     }, [query])
 
