@@ -6,7 +6,7 @@ import "../Components/movies.css"
 const Movies = () => {
 
     const { movie } = useContext(AppContext)
-    console.log(movie)
+    // console.log(movie)
 
     return (
         <>

@@ -14,7 +14,7 @@ const AppProvider = ({ children }) => {
         try {
             const res = await fetch(url);
             const data = await res.json();
-            console.log(data.Search);
+            console.log(data);
             if (data.Response === "True") {
                 setIsLoading(false);
                 setMovie(data.Search)
@@ -30,7 +30,8 @@ const AppProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        getMovies(`${API_URL}&s=${query}`)
+        let timerOut = setTimeout(() => { getMovies(`${API_URL}&s=${query}`) }, 1000)
+        return () => clearTimeout(timerOut)
     }, [query])
 
 
