@@ -10,15 +10,23 @@ const Single = () => {
     const { id } = useParams();
 
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        setLoading(true);
         getData(id)
             .then(res => {
+                setLoading(false)
                 setData(res)
+
             })
     }, [id])
 
     console.log(data)
+
+    if (loading) {
+        return <h2>Loading...</h2>
+    }
 
     return (
         <div>
