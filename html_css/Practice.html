@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {
+        color: blue;
+    }
+
+    h2:hover {
+        color: green;
+    }
+
+    h2:hover~h2 {
+        color: red;
+    }
+
+    h2:hover::before {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <h2>One</h2>
+    <h2> two</h2>
+    <h2>three</h2>
+    <h2>four</h2>
+
+</body>
+
+</html>
